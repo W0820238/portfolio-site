@@ -1,94 +1,140 @@
 <!DOCTYPE html>
+
 <html lang="en">
+	
 <head>
   <meta charset="UTF-8">
-  <title> Style Guides </title>
+	
+  <title>Style Guides</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
+	@font-face {
+	font-family: 'FontOne';
+	src: url('fonts/Ananda Personal Use.ttf') format('truetype');
     }
 
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background-color: white;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    .typography-sample-1 {
-      font-size: 24px;
-      font-weight: bold;
-      margin: 10px 0;
+	@font-face {
+	font-family: 'FontTwo';
+	src: url('fonts/Adogare.otf') format('opentype');
     }
 	  
-	.typography-sample-2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin: 10px 0;
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
-  .color-row {
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+	  
+    section {
+	  margin-bottom: 40px;
+	  padding: 20px;
+	  border-radius: 8px;
+	  background-color: white;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	  border: 1px solid gray; /* Added gray border */
+	}
+
+    .typography-sample-1, .typography-sample-2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+	
+	.typography-sample-1 {
+	  font-family: 'FontOne', sans-serif;
+	  font-size: 20px;
+	  font-weight: bold;
+	  margin: 15px 0;
+	  line-height: 1.5;
+	}
+
+.typography-sample-2 {
+  font-family: 'FontTwo', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+	  
+    .color-row {
       display: flex;
       gap: 20px;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: nowrap; /* Prevents the boxes from wrapping */
-	  width: 100%;    }
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
 
     .color-box {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; /* Vertically centers the text */
-      width: 100px; /* Set width for color boxes */
-      height: 100px; /* Set height for color boxes */
+      justify-content: center;
+      width: 120px;
+      height: 120px;
       text-align: center;
       font-weight: bold;
-      color: white; /* Optional: makes the text more readable on darker backgrounds */
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .color-box p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .color-box:hover {
+      opacity: 0.9;
+      transition: opacity 0.3s ease-in-out;
     }
 
   </style>
 </head>
 <body>
 
-	<heading><h1> Styles Guides </h1></heading>
-  <section id="typography">
-    <h2> Typography </h2>
+  <h1>Style Guides</h1>
 
-	<br>
-    <div class="typography-sample-1"> Wtvr the font name is </div>
-    	<p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
-			<br> abcdefghijklmnopqrstuvwxyz <br>
-			<br> Idk what we're suppposed to type here lmao.
-		</p>
-	<div class="typography-sample-2"> And the second font </div>
-    	<p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
-			<br> abcdefghijklmnopqrstuvwxyz <br>
-			<br> Idk what we're suppposed to type here lmao.
-		</p>
+  <section id="typography">
+    <h2>Typography</h2>
+    <div class="typography-sample-1">Adogare Font
+    <p>A B C D E F G H I J K L M N O P Q R S T U  V W X Y Z
+	<br>a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+	</p>
+	</div>
+
+    <div class="typography-sample-2">Ananda Font
+    <p>A B C D E F G H I J K L M N O P Q R S T U V  W X Y Z
+	<br>a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+	<br>1 2 3 4 5 6 7 8 9 0</p>
+	</div>
   </section>
 
-<section id="images">
-    <h2> Images </h2>
-	  <p> ??Empty?? </p>
-</section>
+  <section class="images">
+    <h2>Images</h2>
+    <p>...</p>
+  </section>
 
-<section id="colours">
-    <h2> Colours </h2>
+  <section id="colours">
+    <h2>Colours</h2>
     <div class="color-row">
-      <div class="color-box" style="background-color: #355C7D;"> #355C7D </div>
-      <div class="color-box" style="background-color: #6C5B7B;"> #6C5B7B </div>
-      <div class="color-box" style="background-color: #C06C84;"> #C06C84 </div>
+      <div class="color-box" style="background-color: #355C7D;">
+        <p>#355C7D</p>
+      </div>
+      <div class="color-box" style="background-color: #6C5B7B;">
+        <p>#6C5B7B</p>
+      </div>
+      <div class="color-box" style="background-color: #C06C84;">
+        <p>#C06C84</p>
+      </div>
     </div>
   </section>
-
 
 </body>
 </html>
