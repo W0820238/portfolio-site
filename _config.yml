@@ -4,8 +4,7 @@ email: W0820238@myscc.ca
 baseurl: "/portfolio-site"
 
 collections:
-	design: 
-		output: true
-		
-	photoshop:
-		output: true
+  design:
+    output: true
+  photoshop:
+    output: true
