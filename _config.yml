@@ -6,6 +6,4 @@ baseurl: "/portfolio-site"
 collections:
   design:
     output: true
-	permalink: /:collection/:path/
-  photoshop:
-    output: true
+    permalink: /:collection/:path/
