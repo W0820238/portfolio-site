@@ -1,7 +1,7 @@
 ---
-title: "git demo"
-tools: [github, html]
-description: "demo for markdown"
+title: "Github Demo"
+tools: [Github, HTML]
+description: "Demo for markdown?"
 layout: 
 permalink: 
 ---
